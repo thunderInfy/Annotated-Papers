@@ -8,6 +8,15 @@ cols = 3
 data = [
 
 		{
+		'Image':'/3.jpg',
+		'Title':'PCL',
+		'Descr':'Prototypical Contrastive Learning of Unsupervised Representations',
+		'Paper':'papers/PCL.pdf'
+		}
+
+		,
+
+		{
 		'Image':'/2.jpg',
 		'Title':'BabyWalk',
 		'Descr':'Going Farther in Vision-and-Language Navigation by Taking Baby Steps',
@@ -87,7 +96,7 @@ for d in data:
 
 	col = (col+1)%cols
 
-if col!=0:
+while col!=0:
 	loop += '<div class="col">'
 	loop += '</div>'
 	if col==cols-1:
