@@ -8,6 +8,16 @@ cols = 3
 data = [
 
 		{
+		'Image':'/4.jpg',
+		'Title':'Momentum Contrastive Learning',
+		'Descr':'Momentum Contrast for Unsupervised Visual Representation Learning',
+		'Blog': 'https://medium.com/analytics-vidhya/simclr-with-less-computational-constraints-moco-v2-in-pytorch-3d8f3a8f8bf2',
+		'Paper':'papers/moco.pdf'
+		}
+
+		,
+
+		{
 		'Image':'/3.jpg',
 		'Title':'PCL',
 		'Descr':'Prototypical Contrastive Learning of Unsupervised Representations',
