@@ -8,6 +8,16 @@ cols = 3
 data = [
 
 		{
+		'Image':'/5.jpg',
+		'Title':'Grad-CAM',
+		'Descr':'Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization',
+		'Video': 'https://www.youtube.com/watch?v=xGZfAoh0xKs',
+		'Paper':'papers/Grad-CAM.pdf'
+		}
+
+		,
+
+		{
 		'Image':'/4.jpg',
 		'Title':'Momentum Contrastive Learning',
 		'Descr':'Momentum Contrast for Unsupervised Visual Representation Learning',
@@ -91,6 +101,11 @@ for d in data:
 	if 'Blog' in d.keys():
 		a0 = '<a href='+ d['Paper'] + ' target="_blank" class="btn btn-primary">Paper</a>'
 		a1 = '<a href='+ d['Blog'] + ' target="_blank" class="btn btn-primary">Blog</a>'
+
+		loop += twocols(a0, a1);
+	elif 'Video' in d.keys():
+		a0 = '<a href='+ d['Paper'] + ' target="_blank" class="btn btn-primary">Paper</a>'
+		a1 = '<a href='+ d['Video'] + ' target="_blank" class="btn btn-primary">Video</a>'
 
 		loop += twocols(a0, a1);
 	else:
